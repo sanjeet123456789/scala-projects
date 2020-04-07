@@ -18,6 +18,12 @@ object basic {
     var result_var=num1+num2
     var nums=List(4,"sanjeet",78)
     var complex_list_contain_student_object=List(Student(5,"pal"),Student(marks=99),Student(name="sonu"))
+    for(a<-0 to complex_list_contain_student_object.size-1){
+      println(complex_list_contain_student_object(a).name);
+    }
+    
+//    println(complex_list_contain_student_object(2).name)
+    
     complex_list_contain_student_object.foreach{i:Any => println(i+" "+complex_list_contain_student_object.head.name)}
     val filter_student=complex_list_contain_student_object.filter(s=> s.marks>=60)
     val partition_student=complex_list_contain_student_object.partition(s=> s.marks>=60)
@@ -50,7 +56,7 @@ object basic {
     
     
     
-    
+    l
     
     
     
